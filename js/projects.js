@@ -1,12 +1,8 @@
-import { kgToGo } from "./rules.js";
+import { kgToGo } from "../js/rules.js";
 
-const state = {
-    player : "Arthurooo",
-    nickname : "loser",
-    level : 1,
-    xp : [0, 100],
-    projects : [],
-};
+import { load, save } from "../js/storage.js";
+
+const state = load();
 
 const dialog = document.getElementById("project-dialog");
 document.getElementById("new-project").addEventListener("click", () => dialog.showModal());
@@ -22,6 +18,7 @@ form.addEventListener("submit", () => {
         due : data.get("due"),
     };
     state.projects.push(project);
+    save(state);
     form.reset();
     render();
 })
