@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Life</title>
+    <script type="module" src="../js/projects.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <main>
+        <button id="new-project">Create new project</button>
+        <dialog id="project-dialog">
+            <form id="project-form" method="dialog">
+            <label>Title <input name="title" required></label>
+            <label>Description <textarea name="des"></textarea></label>
+            <label>Deadline <input name="due" type="date"></label>
+            <button id="confirm-project-creation" type="submit">Submit</button>
+            <button id="cancel-project-creation" type="button">Cancel</button>
+            </form>
+        </dialog>
+        <ul id="projects-list"></ul>
+        <a href="../index.html">Back</a>
+    </main>
+</body>
+</html>
