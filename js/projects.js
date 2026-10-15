@@ -24,8 +24,7 @@ form.addEventListener("submit", () => {
 })
 
 function renderProjects(){
-    const list = document.getElementById("projects-list");
-    list.replaceChildren();
+    const projects_list = document.getElementById("projects-steps");
     for (const project of state.projects){
         const li = document.createElement("li");
         li.textContent = project.title;
