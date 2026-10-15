@@ -11,10 +11,23 @@ export function kgToGo(current, target)
 export function percentDone(current, target)
 {
     let percent = current / target * 100;
+    return percent;
 }
 
 export function formatLevel(lvl, current, target)
 {
     let count = kgToGo(current, target);
-    return (`Level ${lvl} : ${count}/100`);
+    return (`Level ${lvl} : ${count}/${target}`);
 }
+
+export function parseSteps(text){
+    return text
+    .split("\n")
+    .map(str => str.trim())
+    .filter(str => str !== "")
+    .map(str => ({text: str, done: false}));
+}
+
+// export function projectProgress(project){
+//     return project.
+// }

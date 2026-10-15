@@ -1,20 +1,20 @@
-import { kgToGo } from "../js/rules.js";
-
-import { load, save } from "../js/storage.js";
+import {load, save} from "../js/storage.js";
+import { parseSteps } from "../js/rules.js";
 
 const state = load();
 
 const dialog = document.getElementById("project-dialog");
-document.getElementById("new-project").addEventListener("click", () => dialog.showModal());
-document.getElementById("cancel-project-creation").addEventListener("click", () => dialog.close());
-document.getElementById("confirm-project-creation").addEventListener("click", () => dialog.close());
+document.getElementById("new-project")
+.addEventListener("click", () => dialog.showModal());
+document.getElementById("cancel-project-creation")
+.addEventListener("click", () => dialog.close());
 
 const form = document.getElementById("project-form");
 form.addEventListener("submit", () => {
     const data = new FormData(form);
     const project = {
         title : data.get("title"),
-        description : data.get("des"),
+        steps : parseSteps(data.get("steps")),
         due : data.get("due"),
     };
     state.projects.push(project);
