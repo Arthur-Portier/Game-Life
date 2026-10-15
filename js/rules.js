@@ -28,6 +28,11 @@ export function parseSteps(text){
     .map(str => ({text: str, done: false}));
 }
 
-// export function projectProgress(project){
-//     return project.
-// }
+export function projectProgress(project){
+    const steps_progress = project.steps.filter(step => step.done);
+    return { done: steps_progress.length, total: project.steps.length };
+}
+
+export function isProjectComplete(project){
+    return projectProgress(project).done === projectProgress(project).total;
+}
