@@ -1,5 +1,5 @@
 import {load, save} from "../js/storage.js";
-import { parseSteps } from "../js/rules.js";
+import { parseSteps, projectProgress } from "../js/rules.js";
 
 const state = load();
 
@@ -9,9 +9,9 @@ document.getElementById("new-project")
 document.getElementById("cancel-project-creation")
 .addEventListener("click", () => dialog.close());
 
-const form = document.getElementById("project-form");
-form.addEventListener("submit", () => {
-    const data = new FormData(form);
+const form_project = document.getElementById("project-form");
+form_project.addEventListener("submit", () => {
+    const data = new FormData(form_project);
     const project = {
         title : data.get("title"),
         steps : parseSteps(data.get("steps")),
@@ -19,16 +19,35 @@ form.addEventListener("submit", () => {
     };
     state.projects.push(project);
     save(state);
-    form.reset();
+    form_project.reset();
     render();
 })
 
 function renderProjects(){
     const projects_list = document.getElementById("projects-steps");
+    projects_list.replaceChildren();
     for (const project of state.projects){
-        const li = document.createElement("li");
-        li.textContent = project.title;
-        list.appendChild(li);
+        const li_project_title = document.createElement("li");
+        const ul_steps = document.createElement("ul");
+        li_project_title.textContent = 
+        `${project.title} --- ${projectProgress(project).done}/${projectProgress(project).total}`;
+        projects_list.appendChild(li_project_title);
+        projects_list.appendChild(ul_steps);
+        for (const step of project.steps){
+            const li_steps = document.createElement("li");
+            const checkbox_list = document.createElement("input");
+            const label_checkbox = document.createElement("label");
+            checkbox_list.type = "checkbox";
+            checkbox_list.checked = step.done;
+            checkbox_list.addEventListener("change", () => {
+                step.done = !step.done;
+                save(state);
+                render();
+            });
+            label_checkbox.textContent = step.text;
+            li_steps.append(checkbox_list, label_checkbox);
+            ul_steps.appendChild(li_steps);
+        }
     }
 }
 
