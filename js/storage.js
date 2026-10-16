@@ -3,7 +3,6 @@ const state = {
     nickname : "loser",
     level : 1,
     xp : 0,
-    xpNeed : 100,
     projects : [],
 };
 

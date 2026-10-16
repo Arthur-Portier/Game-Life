@@ -1,4 +1,3 @@
-import { kgToGo } from "./rules.js";
 import {load } from "../js/storage.js"
 
 const state = load();
