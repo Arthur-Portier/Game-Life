@@ -1,5 +1,5 @@
 const state = {
-    player : "Arthurooo",
+    name : "Arthurooo",
     nickname : "loser",
     projects : [],
 };

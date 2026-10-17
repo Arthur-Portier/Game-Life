@@ -57,5 +57,3 @@ export function levelFromXp(total){
     }
     return {level, xp: total, need: xpToNextLevel(level)};
 }
-
-

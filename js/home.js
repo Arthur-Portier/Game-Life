@@ -1,11 +1,12 @@
 import {load } from "../js/storage.js"
+import { levelFromXp, totalXp } from "./rules.js";
 
 const state = load();
 
-function render(){
-    document.getElementById("nickname").textContent = state.nickname;
-    document.getElementById("level").textContent = `Level : ${state.level}`;
-    document.getElementById("xp").textContent = `${state.xp} / ${state.xpNeed}`;
+function renderPlayer(){
+    document.getElementById("name").textContent = state.name;
+    document.getElementById("level").textContent = levelFromXp(totalXp(state)).level;
+    document.getElementById("xp").textContent = levelFromXp(totalXp(state)).xp + '/' + levelFromXp(totalXp(state)).need;
 }
 
-render();
+renderPlayer();
