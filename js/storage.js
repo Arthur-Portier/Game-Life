@@ -1,8 +1,6 @@
 const state = {
     player : "Arthurooo",
     nickname : "loser",
-    level : 1,
-    xp : 0,
     projects : [],
 };
 
