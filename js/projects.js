@@ -1,5 +1,6 @@
 import {load, save} from "../js/storage.js";
-import { levelFromXp, parseSteps, projectProgress, totalXp } from "../js/rules.js";
+import {  parseSteps, projectProgress } from "../js/rules.js";
+import { renderPlayer } from "./render.js";
 
 const state = load();
 
@@ -54,15 +55,9 @@ function renderProjects(){
     }
 }
 
-function renderPlayer(){
-    document.getElementById("name").textContent = state.name;
-    document.getElementById("level").textContent = levelFromXp(totalXp(state)).level;
-    document.getElementById("xp").textContent = levelFromXp(totalXp(state)).xp + '/' + levelFromXp(totalXp(state)).need;
-}
-
 function render(){
     renderProjects();
-    renderPlayer();
+    renderPlayer(state);
 }
 
 render();
