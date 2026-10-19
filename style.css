@@ -1,3 +1,12 @@
-h2 {
-    color : gold;
+#piste{
+    height: 30px;
+    width: 300px;
+    background-color: gray;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#remplissage{
+    height: 100%;
+    background-color: green;
 }

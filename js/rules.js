@@ -10,8 +10,7 @@ export function kgToGo(current, target)
 
 export function percentDone(current, target)
 {
-    let percent = current / target * 100;
-    return percent;
+    return (current / target) * 100;
 }
 
 export function formatLevel(lvl, current, target)
