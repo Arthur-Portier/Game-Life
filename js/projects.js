@@ -1,5 +1,5 @@
 import {load, save} from "./storage.js";
-import {  daysLeft, parseSteps, projectProgress } from "../js/rules.js";
+import {  daysLeft, parseSteps, projectProgress, todayString } from "../js/rules.js";
 import { renderPlayer } from "./render.js";
 
 const state = load();
@@ -25,6 +25,7 @@ form_project.addEventListener("submit", () => {
 })
 
 function renderProjects(){
+    const local_date = new Date();
     const projects_list = document.getElementById("projects-steps");
     projects_list.replaceChildren();
     for (const project of state.projects){
@@ -33,7 +34,7 @@ function renderProjects(){
         const ul_steps = document.createElement("ul");
         li_project_title.textContent = 
         `${project.title} --- ${projectProgress(project).done}/${projectProgress(project).total} --- 
-        J-${daysLeft(project.due, new Date())}`;
+        J-${daysLeft(project.due, todayString(local_date))}`;
         projects_list.appendChild(li_project_title);
         projects_list.appendChild(li_project_steps);
         li_project_steps.appendChild(ul_steps);

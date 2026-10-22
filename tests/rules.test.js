@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseSteps, projectProgress, isProjectComplete, levelFromXp, totalXp, daysLeft } from "../js/rules.js";
+import { parseSteps, projectProgress, isProjectComplete, levelFromXp, totalXp, daysLeft, todayString } from "../js/rules.js";
 
 const project1 = {title : "Gym", 
     steps : [{text: "Bench 100 kg", done: true}, {text: "Squat 120 kg", done: true}, {text: "Deadlift 150 kg"
@@ -58,4 +58,9 @@ test("daysLeft(): renvoie en entier le nombre de jours restants avant la deadlin
     assert.deepEqual(daysLeft("2026-11-02", "2026-10-28"), 5);
     assert.deepEqual(daysLeft("2026-10-26", "2026-10-24"), 2);
     assert.deepEqual(daysLeft("2027-01-01", "2026-12-31"), 1);
+});
+
+test("todayString(): Convertis une date locale au format string ISO. ", () => {
+    assert.deepEqual(todayString(new Date(2026, 9, 22, 0, 30)), "2026-10-22");
+    assert.deepEqual(todayString(new Date(2026, 0, 5)), "2026-01-05");
 });

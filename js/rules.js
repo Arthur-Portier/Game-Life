@@ -47,3 +47,9 @@ export function daysLeft(due, today){
     const ms = new Date(due) - new Date(today);
     return Math.round(ms / MS_DAY);
 }
+
+export function todayString(date){
+    const month = (date.getMonth() + 1).toString();
+    const day = date.getDate().toString();
+    return `${date.getFullYear()}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
+}
