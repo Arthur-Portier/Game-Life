@@ -1,4 +1,4 @@
-import {load, save} from "../js/storage.js";
+import {load, save} from "./storage.js";
 import {  parseSteps, projectProgress } from "../js/rules.js";
 import { renderPlayer } from "./render.js";
 
