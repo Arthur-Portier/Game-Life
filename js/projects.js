@@ -1,5 +1,5 @@
 import {load, save} from "./storage.js";
-import {  parseSteps, projectProgress } from "../js/rules.js";
+import {  daysLeft, parseSteps, projectProgress } from "../js/rules.js";
 import { renderPlayer } from "./render.js";
 
 const state = load();
@@ -32,8 +32,8 @@ function renderProjects(){
         const li_project_steps = document.createElement("li");
         const ul_steps = document.createElement("ul");
         li_project_title.textContent = 
-        `${project.title} --- 
-        ${projectProgress(project).done}/${projectProgress(project).total}`;
+        `${project.title} --- ${projectProgress(project).done}/${projectProgress(project).total} --- 
+        J-${daysLeft(project.due, new Date())}`;
         projects_list.appendChild(li_project_title);
         projects_list.appendChild(li_project_steps);
         li_project_steps.appendChild(ul_steps);

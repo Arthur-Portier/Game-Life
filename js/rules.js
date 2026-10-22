@@ -40,3 +40,10 @@ export function levelFromXp(total){
     }
     return {level, xp: total, need: xpToNextLevel(level)};
 }
+
+const MS_DAY = 86400000;
+
+export function daysLeft(due, today){
+    const ms = new Date(due) - new Date(today);
+    return Math.round(ms / MS_DAY);
+}
