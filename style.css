@@ -1,21 +1,203 @@
-#piste{
-    height: 30px;
-    width: 300px;
-    background-color: gray;
-    border-radius: 20px;
+/* Couleurs et réglages communs : change l'ambiance ici */
+:root {
+    --bg: #12141c;
+    --surface: #1d2130;
+    --surface-2: #272c3e;
+    --text: #f1f2f6;
+    --muted: #9aa1b8;
+    --accent: #4ade80;
+    --late: #f87171;
+    --today: #fbbf24;
+    --radius: 14px;
+    color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Un écran = exactement la hauteur visible, en colonne */
+main {
+    height: 100dvh;
+    max-width: 480px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px;
+    padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+h1, h2 { margin: 0; text-align: center; }
+
+#name { font-size: 1.6rem; }
+
+#level {
+    font-size: 1.1rem;
+    color: var(--accent);
+}
+
+#xp {
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: var(--muted);
+}
+
+#piste {
+    height: 14px;
+    width: 100%;
+    background-color: var(--surface-2);
+    border-radius: 999px;
     overflow: hidden;
 }
 
-#remplissage{
+#remplissage {
     height: 100%;
-    background-color: green;
+    background-color: var(--accent);
+    border-radius: 999px;
     transition: 0.5s ease-out;
 }
 
-.late-projects{
-    color: red;
+/* Accueil : l'image prend toute la place qui reste */
+.picture {
+    flex: 1;
+    min-height: 0;
+    width: 100%;
+    object-fit: contain;
 }
 
-.d-day{
-    color: orange;
+/* Barre d'onglets en bas : les 3 liens se partagent la largeur */
+.onglets {
+    display: flex;
+    gap: 10px;
+}
+
+.onglets a { flex: 1; }
+
+/* Liens et boutons qui ressemblent à des boutons d'app */
+main > a, .onglets a, button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 48px;
+    padding: 10px;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    color: var(--text);
+    font: inherit;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+}
+
+main > a:active, .onglets a:active, button:active { background-color: var(--surface-2); }
+
+#new-project, #confirm-project-creation {
+    background-color: var(--accent);
+    color: var(--bg);
+}
+
+/* Projets : la page ne défile pas, seule la liste défile */
+#projects-steps {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Chaque projet = 2 <li> : le titre (impair) puis ses étapes (pair) → une carte */
+#projects-steps > li:nth-child(odd) {
+    margin-top: 10px;
+    padding: 12px 14px 4px;
+    background-color: var(--surface);
+    border-radius: var(--radius) var(--radius) 0 0;
+    font-weight: 600;
+}
+
+#projects-steps > li:first-child { margin-top: 0; }
+
+#projects-steps > li:nth-child(even) {
+    padding: 0 14px 8px;
+    background-color: var(--surface);
+    border-radius: 0 0 var(--radius) var(--radius);
+}
+
+#projects-steps ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#projects-steps label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 0;
+    color: var(--muted);
+}
+
+#projects-steps label:has(input:checked) {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+#projects-steps input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin: 0;
+    accent-color: var(--accent);
+}
+
+.late-projects { color: var(--late); }
+
+.d-day { color: var(--today); }
+
+/* Fenêtre de création de projet */
+dialog {
+    width: min(90vw, 420px);
+    padding: 20px;
+    border: none;
+    border-radius: var(--radius);
+    background-color: var(--surface);
+    color: var(--text);
+}
+
+dialog::backdrop { background-color: rgb(0 0 0 / 0.6); }
+
+#project-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#project-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+/* 16px minimum : en dessous, l'iPhone zoome tout seul sur le champ */
+#project-form input, #project-form textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--surface-2);
+    color: var(--text);
+    font: inherit;
+    font-size: 16px;
+}
+
+#project-form textarea {
+    min-height: 100px;
+    resize: vertical;
 }
