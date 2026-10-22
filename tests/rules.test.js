@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseSteps, projectProgress, isProjectComplete, levelFromXp, totalXp, daysLeft, todayString } from "../js/rules.js";
+import { parseSteps, projectProgress, isProjectComplete, levelFromXp, totalXp, daysLeft, todayString, deadlineLabel } from "../js/rules.js";
 
 const project1 = {title : "Gym", 
     steps : [{text: "Bench 100 kg", done: true}, {text: "Squat 120 kg", done: true}, {text: "Deadlift 150 kg"
@@ -63,4 +63,11 @@ test("daysLeft(): renvoie en entier le nombre de jours restants avant la deadlin
 test("todayString(): Convertis une date locale au format string ISO. ", () => {
     assert.deepEqual(todayString(new Date(2026, 9, 22, 0, 30)), "2026-10-22");
     assert.deepEqual(todayString(new Date(2026, 0, 5)), "2026-01-05");
+});
+
+test("deadlineLabel(days): Permet d'obtenir le string relatif à un retard dans la deadline ou dans combien de temps est cette deadline. ", () => {
+    assert.deepEqual(deadlineLabel(5), "J-5");
+    assert.deepEqual(deadlineLabel(-2), "2 days late");
+    assert.deepEqual(deadlineLabel(-1), "1 day late");
+
 });

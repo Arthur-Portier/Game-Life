@@ -53,3 +53,14 @@ export function todayString(date){
     const day = date.getDate().toString();
     return `${date.getFullYear()}-${month.padStart(2, "0")}-${day.padStart(2, "0")}`;
 }
+
+export function deadlineLabel(days){
+    let res = `J-${days}`;
+    if (days === -1){
+        res = `${-days} day late`;
+    }
+    else if (days < -1){
+        res = `${-days} days late`;
+    }
+    return res;
+}

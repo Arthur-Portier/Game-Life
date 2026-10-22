@@ -1,5 +1,5 @@
 import {load, save} from "./storage.js";
-import {  daysLeft, parseSteps, projectProgress, todayString } from "../js/rules.js";
+import {  daysLeft, parseSteps, projectProgress, todayString, deadlineLabel } from "../js/rules.js";
 import { renderPlayer } from "./render.js";
 
 const state = load();
@@ -32,9 +32,16 @@ function renderProjects(){
         const li_project_title = document.createElement("li");
         const li_project_steps = document.createElement("li");
         const ul_steps = document.createElement("ul");
+
+        if (daysLeft(project.due, todayString(local_date)) < 0){
+            li_project_title.classList.add("late-projects");
+        }
+        if (daysLeft(project.due, todayString(local_date)) === 0){
+            li_project_title.classList.add("d-day");
+        }
         li_project_title.textContent = 
         `${project.title} --- ${projectProgress(project).done}/${projectProgress(project).total} --- 
-        J-${daysLeft(project.due, todayString(local_date))}`;
+        ${deadlineLabel(daysLeft(project.due, todayString(local_date)))}`;
         projects_list.appendChild(li_project_title);
         projects_list.appendChild(li_project_steps);
         li_project_steps.appendChild(ul_steps);
