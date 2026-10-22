@@ -1,0 +1,22 @@
+{
+    "name": "GameLife",
+    "short_name": "GameLife",
+    "display": "standalone",
+    "background_color": "green",
+    "scope": "./",
+    "start_url": "./index.html",
+    "theme_color": "blue",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "images/gojo-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "images/gojo-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
