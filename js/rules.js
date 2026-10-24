@@ -64,3 +64,17 @@ export function deadlineLabel(days){
     }
     return res;
 }
+
+const CURRENCY_LVL = 10;
+
+export function currencyEarned(level){
+    return level * CURRENCY_LVL;
+}
+
+export function rollRarity(){
+    const three_stars_rate = 0.7;
+    const four_stars_rate = 0.2;
+    const five_stars_rate = 0.1;
+
+    
+}

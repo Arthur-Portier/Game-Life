@@ -2,6 +2,7 @@ const state = {
     name : "Arthurooo",
     nickname : "loser",
     projects : [],
+    inventory : []
 };
 
 export function save(state){
