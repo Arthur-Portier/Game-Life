@@ -5,7 +5,7 @@
     "background_color": "green",
     "scope": "./",
     "start_url": "./index.html",
-    "theme_color": "blue",
+    "theme_color": "#12141c",
     "orientation": "portrait-primary",
     "icons": [
         {

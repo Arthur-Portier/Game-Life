@@ -10,6 +10,7 @@
     --today: #fbbf24;
     --radius: 14px;
     color-scheme: dark;
+    overscroll-behavior: none;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
