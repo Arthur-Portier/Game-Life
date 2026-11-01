@@ -1,0 +1,1 @@
+je me demande, est-ce que dans ma fonction totalXp je parcours bien tous les projets?
