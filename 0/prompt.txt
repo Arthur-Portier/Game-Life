@@ -1,0 +1,5 @@
+<pasted_content id="5b70">
+T'as, mais je comprends pas trop. Là, moi, ce que j'ai fait, c'est que je récupère l'année, le mois et le jour de l'heure UTC. Moi, je veux l'heure locale, qui est UTC+2. Je ne vois pas comment on fait, parce que moi, les dates que je récupère, quand je fais « create new project », si ça crée l'heure quand même, OK, mais j'ai un peu de mal à comprendre comment je prends un compteur local. C'est quoi ? Je comprends pas bien.
+
+En soi, ça marcherait, par exemple en brut, de faire `date.setHours` +2, mais effectivement, ça ne marcherait que pour la France, pas pour d'autres endroits. Aussi, je comprends pas ton test : le 22 octobre à 00:30, ce qu'on veut, c'est qu'il soit 2:30, mais ça ne teste pas vraiment. Faut pas plutôt un test où, par exemple, il est 23:00 et, à l'heure de Paris, on est au jour suivant ?
+</pasted_content id="5b70">
