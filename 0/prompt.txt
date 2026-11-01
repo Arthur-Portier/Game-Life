@@ -1,0 +1,1 @@
+du coup, cette fonction `deadline label`, je la mets dans `rules` ou dans `project.js` ?
