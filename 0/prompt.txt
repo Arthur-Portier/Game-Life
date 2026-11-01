@@ -1,0 +1,1 @@
+est-ce que tu peux créer un reviewer de code, donc un sous-agent qui fait ça ? Je ne sais pas comment on review bien un code, du coup je te laisse créer le sous-agent de manière optimale pour review du code.
