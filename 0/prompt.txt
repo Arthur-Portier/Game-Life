@@ -1,0 +1,1 @@
+Pourquoi, quand je n'affiche ma page en cochant une case, elle se décoche alors que j'ai bien fait une fonction `addEventListener`  ?
