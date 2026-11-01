@@ -1,0 +1,1 @@
+Voilà, c'est le matin. J'ai un peu de mal à me concentrer, donc j'ai envie de commencer par les trucs les plus faciles. Là, je suis en train de faire parse steps. Regarde ce que j'ai déjà écrit et guide-moi un petit peu pour refiner cette fonction.
