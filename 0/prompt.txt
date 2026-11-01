@@ -1,0 +1,1 @@
+et juste là, par rapport à mon projet actuel, j'ai pas besoin d'aller dans la page d'un navigateur, mais du coup, tous les trucs state, render, etc., c'est dans mon app.js.
