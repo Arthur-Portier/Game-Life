@@ -1,0 +1,1 @@
+OK, c'est parti. Pour terminer le gachet, l'inventaire, rappelle-moi tout ce que je dois faire, toutes les étapes, et en détail. Par exemple, pour chaque fonction dure dans rules.js, comment je teste ? Tu m'avais dit d'abord d'écrire les tests, ensuite d'écrire les fonctions. Est-ce que tu peux me redire ça en détail, s'il te plaît ?
