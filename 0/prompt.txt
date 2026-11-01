@@ -1,0 +1,1 @@
+du coup, rapidement, à quoi sert d'avoir le view transition en plus du service worker ?
