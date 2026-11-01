@@ -1,0 +1,1 @@
+OK, en vrai, j'ai besoin d'explications quand même pour la toute première ligne du CSS, là, avec `*,* :`, ` ::`. J'ai besoin d'explications.
