@@ -1,0 +1,1 @@
+juste, j'ai un petit dossier. Pour le point du jour que tu m'as donné, moi, par exemple, j'essaie de lancer la commande `node -check`, mais ça ne fait rien. Ça m'ouvre quelque chose où je peux écrire, mais c'est tout.
