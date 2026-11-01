@@ -1,0 +1,1 @@
+je suis un peu perdu sur la façon d'utiliser les fonctions qui proviennent de storage.js.
