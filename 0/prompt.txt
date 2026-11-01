@@ -1,0 +1,1 @@
+y a un truc que je comprends pas : là, je fais ma fonction `render project`, OK, mais ensuite, comment je l'appelle « by the way » ? Parce que là, c'est juste la fonction `render project`. Faut bien l'appeler pour que ça s'affiche à l'écran.
