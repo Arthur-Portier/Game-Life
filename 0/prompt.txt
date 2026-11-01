@@ -1,0 +1,1 @@
+OK, là, j'ai l'application sur mon téléphone, donc je peux passer à l'étape de rules.js. Quelles sont toutes les fonctions que je dois créer ?
