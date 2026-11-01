@@ -1,0 +1,6 @@
+du coup, dans mon fichier projet HTML, j'ai ajouté un bouton, et j'aimerais que, quand je clique dessus, ça crée un nouveau projet. Pour cela, ça ouvre une petite fenêtre par-dessus l'HTML, dans lequel je peux mettre :
+- le nom
+- la deadline
+- les objectifs
+- les étapes, etc.
+Ensuite, une fois que ce projet est créé, il s'affichera dans la page projects.html
