@@ -1,0 +1,1 @@
+juste rapidement avant de le faire : je ferai un `if` : si `date` et `- février` à 10, je retourne quelque chose. Un autre `if` : si seulement la date est inférieure à 10, je fais un certain `return`. C'est un autre `if` si c'est seulement le mois. Ensuite, un dernier et un `else`. Donc j'aurai 4 `returns`, c'est ça, dans ma fonction. Oui, il y a un moyen plus simple ?
