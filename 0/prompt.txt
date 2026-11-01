@@ -1,0 +1,1 @@
+donc, comment je peux importer une image dans HTML ? Et ensuite, comment je peux lier deux pages HTML entre elles ?
