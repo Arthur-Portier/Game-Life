@@ -1,0 +1,3 @@
+OK, j'ai deux choses en tête déjà :
+1. Les espaces, par exemple : si je mets un espace au tout début, entre l'accolade et la première lettre, et un espace à la fin, ou si je ne mets pas ces espaces, c'est exactement le même objet. Parce que là, quand j'ai fait mes tests avec deep equal et que je ne mets pas les espaces, ça marche quand même.
+2. Pourquoi, quand je formate avec le dollar et que je mets l'objet entre accolades, ça ne marche pas ? Comment je dois faire pour le voir concrètement quand je fais mon test ?
