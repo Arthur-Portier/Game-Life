@@ -1,0 +1,1 @@
+OK, donc j'ai remarqué des choses dérangeantes sur mon appli. Déjà, je trouve que quand on passe d'une page à l'autre, ça lague un peu et la transition n'est pas très belle. Comment je pourrais améliorer ça ?
