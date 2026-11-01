@@ -1,0 +1,3 @@
+OK, donc là, je suis au bloc 2. J'essaie de faire la fonction `project progress`, mais j'ai un peu du mal à réagir. Moi, j'étais parti sur quoi ? Je fais `project.steps` pour arriver au tableau d'objets. Ensuite, je parcourrais tous ces objets pour savoir combien il y a de `done : true` et faire un total.
+
+Moi, je parcourais, mais je m'ai dit : en JavaScript, il y a des fonctions toutes faites pour ça. Est-ce que c'est `map`, par exemple ? Pas vraiment `map`, c'est pour se déplacer, par exemple ici dans mon tableau d'objets, mais ça, ça ne sauvegarde pas le nombre de done: true qu'il y a.
