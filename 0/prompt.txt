@@ -1,0 +1,1 @@
+il n'y a pas un moyen d'importer directement toutes les fonctions présentes dans le fichier .js ?
