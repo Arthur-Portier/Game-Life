@@ -1,6 +1,6 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { parseSteps, projectProgress, isProjectComplete, levelFromXp, totalXp, daysLeft, todayString, deadlineLabel } from "../js/rules.js";
+import { currencyBalance, currencyEarned, currencySpent, canPull, parseSteps, projectProgress, isProjectComplete, levelFromXp, totalXp, daysLeft, todayString, deadlineLabel } from "../js/rules.js";
 
 const project1 = {title : "Gym", 
     steps : [{text: "Bench 100 kg", done: true}, {text: "Squat 120 kg", done: true}, {text: "Deadlift 150 kg"
@@ -69,5 +69,6 @@ test("deadlineLabel(days): Permet d'obtenir le string relatif à un retard dans 
     assert.deepEqual(deadlineLabel(5), "J-5");
     assert.deepEqual(deadlineLabel(-2), "2 days late");
     assert.deepEqual(deadlineLabel(-1), "1 day late");
-
 });
+
+
