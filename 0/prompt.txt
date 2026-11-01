@@ -1,0 +1,3 @@
+OK, ouais, donc normalement, c'est bon. Pour la bande bleue en haut, j'ai mis la même couleur, donc ça devrait plus me gêner.
+
+Ensuite, j'ai pas trop compris à propos de conserver la balise en mon HTML, donc je l'ai pas fait. J'ai testé la commande : ça a fait `false`, et donc j'ai ajouté mon `overscroll-behavior` dans mon CSS, dans le `body`. Mais comment je vois si ça marche directement, là, depuis mon dev tools, sans avoir à pousser et regarder sur mon téléphone ?
