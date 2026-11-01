@@ -1,0 +1,1 @@
+On est d'accord je suis oblige de mettre la balise input directement dans mon fichier js par rapport a la facon dont j'ai cree renderProject? Comment faire pour creer l'element input avec un type depuis js?
