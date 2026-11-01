@@ -1,0 +1,6 @@
+<pasted_content id="aecb">
+OK, plusieurs choses :
+- Comment j'exporte deux fichiers à partir de mon image ?
+- J'ai pas compris où est-ce que tu veux que j'ajoute la ligne pour l'iPhone et à quoi elle sert exactement. Je comprends pas.
+- Normalement, j'ai corrigé pour les liens relatifs, ça devrait marcher.
+</pasted_content id="aecb">
