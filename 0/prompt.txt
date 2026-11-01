@@ -1,0 +1,3 @@
+OK, donc là, maintenant, ce que j'aimerais faire, c'est quoi ? C'est que, à chaque montée de niveau, on gagne des ressources. Ces ressources vont permettre, dans une page invocation, de justement pouvoir jouer un tirage au sort, comme dans les jeux gacha, et vont permettre d'obtenir aléatoirement différents bonus.
+
+Donc là, moi, ce que j'ai en tête et ce que je vais commencer à faire, c'est que ce sera des armes qu'on peut obtenir. Je me suis déjà préparé des designs. J'ai repris ceux de Genshin Impact parce que je les trouve très jolis. Voilà.
