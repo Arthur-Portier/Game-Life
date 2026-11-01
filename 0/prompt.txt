@@ -1,0 +1,1 @@
+Attends, est-ce que tu peux juste écrire toi-même tout le CSS pour ça, ce que tu m'as montré ? Je l'ai compris : c'est juste pour avoir un beau résultat. Écris tout toi-même, et je comprendrai après, t'inquiète pas. Enfin, je vais quand même apprendre. Pour le moment, fais rien dans les autres fichiers HTML, OK ?
