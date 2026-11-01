@@ -1,0 +1,3 @@
+OK, plusieurs choses :
+- Pour essayer la fonction dans le DevTools, c'est quand même assez chiant, parce que j'ai l'impression même qu'il faut la réécrire dedans. Sinon, il me dit qu'elle n'est pas définie ici, donc j'ai ça. En plus, pour tester, j'aime pas trop. Après, je sais pas si c'est utile de savoir le faire dans le DevTools.
+- Là, j'ai quand même finalement réussi à le tester, mais ma fonction ne marche pas. Qu'est-ce qui ne marche pas ? Le `split` marche. Le `filter`, je sais pas, en fait, j'ai pas essayé. Le `trim` et `map` ne marchent pas, en tout cas. Et sinon, si c'est beaucoup plus important de savoir le faire, limite, apprends-moi comment tester dans le dossier test directement.
