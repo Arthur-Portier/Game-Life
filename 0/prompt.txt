@@ -1,0 +1,1 @@
+donc, le problème avec l'extension Microsoft Edge, c'est que ça marche, mais elle ne prend pas mon site à moi. Elle prend un index.html qu'elle a créé elle-même.
