@@ -1,0 +1,1 @@
+mais est-ce qu'il y a juste un raccourci pour sauvegarder tous les fichiers actuellement ouverts dans VS Code ?
