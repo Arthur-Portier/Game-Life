@@ -1,0 +1,1 @@
+mais je pense que j'ai bien envie de m'attaquer directement au CSS. Comme ça, je pourrais visualiser ce que je veux dans mon app, etc., où seront les choses, parce que là, avec juste HTML, j'arrive pas à visualiser ce que je veux.
