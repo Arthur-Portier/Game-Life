@@ -1,0 +1,1 @@
+fonction pour juste recup les decimal
