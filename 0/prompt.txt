@@ -1,0 +1,1 @@
+comment utiliser le .gitignore pour pouvoir faire un `git add .`, mais que ça ne prenne pas le .clou ni le .vscode ?
