@@ -1,0 +1,1 @@
+quelle est la fonction pour supprimer un élément d'une array ?
