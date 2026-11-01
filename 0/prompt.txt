@@ -1,0 +1,1 @@
+OK, du coup, si le service worker permet ça autant, que le fasse maintenant, effectivement.
