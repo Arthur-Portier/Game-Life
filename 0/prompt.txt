@@ -1,0 +1,3 @@
+OK, j'ai plusieurs choses que j'aimerais régler. Quand je lance l'application sur mon téléphone, il y a deux choses :
+1. Il y a une bande bleue tout en haut qui est dérangeante.
+2. Je peux quand même un peu scroll. C'est pas vraiment figé, ça m'embête aussi.
