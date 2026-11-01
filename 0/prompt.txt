@@ -1,0 +1,1 @@
+comment copier la ligne où il y a mon curseur sur VS Code sans devoir sélectionner tout Ctrl+C Ctrl+V ?
