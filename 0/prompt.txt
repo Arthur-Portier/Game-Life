@@ -1,0 +1,1 @@
+OK, du coup, là, ma fonction `parse steps` marche correctement. On peut passer à la fonction suivante.
