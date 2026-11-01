@@ -1,0 +1,1 @@
+ah oui, tiens, je me demandais : quand est-ce que je vais commencer à utiliser le vrai stack d'un web développeur, donc React ? J'ai que ça en tête, mais voilà quoi.
