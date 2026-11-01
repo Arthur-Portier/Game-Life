@@ -1,0 +1,1 @@
+donc là, pour project progress, j'ai mon projet, très bien. Moi, je veux déjà me placer dans la clé description et, ensuite, dans cette clé description, je veux pouvoir aller voir la clé donne et voir si les trous font. En fait, j'arrive pas à comprendre comment, justement, on parcourt des tableaux, des objets en JavaScript.
