@@ -1,0 +1,1 @@
+OK, très bien, mais juste maintenant, qu'est-ce que je dois vérifier, en gros, avant chaque push pour être sûr que tout marche bien ?
