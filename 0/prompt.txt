@@ -1,0 +1,1 @@
+mais juste, j'ai besoin de comprendre un peu un truc avec Git. À chaque fois, tu me dis « commit », comme si c'était « un peu le truc le plus important », mais faut pas. À quel moment tu add, commit et push, en fait ? C'est à quel moment tu fais ces actions, et même d'autres actions Git, en fait ? À quel moment tu sers de Git en règle générale ?
