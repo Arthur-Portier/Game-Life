@@ -1,0 +1,1 @@
+Moi, je suis sur un iPhone. OK, donc, pour les chemins relatifs, dans les sous-dossiers de html, juste pour que ce soit un truc évident, change juste le chemin relatif pour le link Apple Touch. Oui, c'est un truc évident, donc fais-le modifier : le chemin relatif.
