@@ -1,0 +1,1 @@
+J'ai un souci : pourquoi, dans mon HTML, le `render` que j'ai créé dans app.js ne marche pas ? Par exemple, pour le level et l'XP, pourquoi ça n'a pas modifié le contenu textuel, parce que je veux
