@@ -1,0 +1,1 @@
+mais ça m'embête un peu, parce qu'il n'y a pas un moyen de mettre le développeur tools pour un site dans un onglet sur VS Code, et que ce ne soit pas une fenêtre à part ?
