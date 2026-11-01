@@ -1,0 +1,1 @@
+je comprends pas quelle est l'erreur. Il me dit `project not defined`. Pourtant, dans mon fichier JavaScript, je définis bien la variable `project`.
