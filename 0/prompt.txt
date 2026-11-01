@@ -1,0 +1,1 @@
+Act like a systems architect who collapsed 20-tool workflows into single AI systems for top CEOs. Build a complete single-system empire using only Claude for [role]. Cover morning workflow and sales in one master system."
