@@ -65,11 +65,13 @@ export function deadlineLabel(days){
     return res;
 }
 
+//#region inventory functions 
+
 const CURRENCY_BY_LVL = 10;
 const CURRENCY_PULL = 10;
 const THREE_STARS_RATE = .6;
-const FOUR_STARS_RATE = .3;
-const FIVE_STARS_RATE = .1;
+const FOUR_STARS_RATE = .9;
+const FIVE_STARS_RATE = 1;
 
 export function currencyEarned(level){
     return level * CURRENCY_BY_LVL;
@@ -88,23 +90,22 @@ export function canPull(state){
     return currencyBalance(state) >= CURRENCY_PULL;
 }
 
-export function rollRarity(nb){
-    if (nb <= THREE_STARS_RATE){
+export function rollRarity(zero_to_one_nb){
+    if (zero_to_one_nb <= THREE_STARS_RATE){
         return 3;
     }
-    else if (nb > THREE_STARS_RATE && nb <= THREE_STARS_RATE + FOUR_STARS_RATE){
+    else if (zero_to_one_nb > THREE_STARS_RATE && zero_to_one_nb <= FOUR_STARS_RATE){
         return 4;
     }
-    else if (nb > THREE_STARS_RATE + FOUR_STARS_RATE &&
-    nb <= THREE_STARS_RATE + FOUR_STARS_RATE + FIVE_STARS_RATE){
+    else if (zero_to_one_nb > FOUR_STARS_RATE && zero_to_one_nb <= FIVE_STARS_RATE){
         return 5;
     }
 }
 
-export function pickWeapon(catalog){
+export function pickWeapon(catalog, rarity, zero_to_one_nb){
     
 }
 
-
+//#endregion inventory functions
 
 
