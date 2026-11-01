@@ -1,0 +1,1 @@
+OK, juste, est-ce que t'as une commande bash, là, avec l'outil Image Magic pour enlever le faux fond transparent de mon image ?
