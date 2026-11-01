@@ -1,0 +1,1 @@
+OK, j'ai deux questions. Déjà, le `border-radius` ne marche pas. J'arrive pas à arrondir les coins. J'ai mis `inherit` comme option et j'ai essayé d'autres, mais aucune ne marche. Il n'y a pas moyen que ce qu'on écrit dans les Dev Tools se transfère automatiquement dans mon fichier CSS ?
