@@ -1,0 +1,1 @@
+Juste pour l'etape 2 quand tu dis ecrite le tableau tu veux dire ecrire l'objet car levelFromXp renvoie un objet?
