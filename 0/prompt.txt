@@ -1,0 +1,1 @@
+mais aussi, une autre chose : moi, quand dans la console je crée `new Date` et que je l'affiche, ça me met que c'est en Central European Summer Time. Moi, ça me crée pas en UTC, en fait, quand je fais `new Date`, j'ai l'impression.
