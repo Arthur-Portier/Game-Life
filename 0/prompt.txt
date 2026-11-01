@@ -1,0 +1,1 @@
+Comment je fais pour creer le prototype de la fonction que j'utilise sur vs code grace a un raccourci?
