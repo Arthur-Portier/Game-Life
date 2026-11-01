@@ -1,0 +1,1 @@
+mais juste, quel est l'intérêt de recréer la fonction moi-même, `today string`, alors qu'elle existe déjà ? Dans le MDN, on voit qu'il y en a une.
