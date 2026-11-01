@@ -1,0 +1,1 @@
+là, je comprends pas mon erreur. Du coup, ils me disent que `toLocalDateString` n'est pas une fonction. Or, dans le MDN, justement, ils disent que c'est une fonction. Donc, peut-être juste, je l'ai pas importé, et dans ce cas-là, comment on l'importe ?
