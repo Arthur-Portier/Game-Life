@@ -1,0 +1,3 @@
+OK, plusieurs choses :
+1. Mon appli : ce sera peut-être un peu tard pour qu'elle soit vraiment dans un état où je puisse l'utiliser tous les jours, dimanche soir, surtout que là, j'ai des choses prévues. On peut peut-être repousser cette deadline à fin novembre. Je veux que, fin novembre, en gros, j'utilise mon appli tous les jours et qu'elle soit purement fonctionnelle.
+2. OK, maintenant, regarde l'état dans lequel est mon app : quelle est l'étape suivante à réaliser ?
